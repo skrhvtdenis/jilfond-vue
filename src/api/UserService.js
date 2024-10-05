@@ -5,7 +5,6 @@ export default class UserService {
         const response = await axios.get(
             `https://jsonplaceholder.typicode.com/users?${searchQuery}`
         );
-        console.log(response);
         return response;
     }
 

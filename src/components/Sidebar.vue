@@ -16,7 +16,6 @@ const searchQuery = computed(() => store.state.searchQuery);
 const isListLoading = computed(() => store.state.isListLoading);
 const listError = computed(() => store.state.listError);
 
-// TODO: вынести в хелпер преобразование строки
 const handleInput = (e) => {
     const searchQuery = createSearchQuery(e.target.value.split(','));
 
